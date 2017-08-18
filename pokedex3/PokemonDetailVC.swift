@@ -31,7 +31,13 @@ class PokemonDetailVC: UIViewController {
     
         // Do any additional setup after loading the view.
         
-        nameLabel.text = pokemon.name
+        nameLabel.text = pokemon.name.capitalized
+        
+        let img = UIImage(named: "\(pokemon.pokedexId)")
+        mainImage.image = img
+        currentEvoImage.image = img
+        idLabel.text = "\(pokemon.pokedexId)"
+        
         pokemon.downloadPokemonDetails {
             self.updateUI()
         }
@@ -50,10 +56,18 @@ class PokemonDetailVC: UIViewController {
         typeLabel.text = pokemon.type
         defenseLabel.text = pokemon.defense
         heightLabel.text = pokemon.height
-        idLabel.text = "\(pokemon.pokedexId)"
         weightLabel.text = pokemon.weight
         attackLabel.text = pokemon.attack
+        descriptionLabel.text = pokemon.description
         
+        if pokemon.nextEvolutionId == "" {
+            evoLabel.text = "No Evolutions"
+            nextEvoImage.isHidden = true
+        } else {
+            nextEvoImage.isHidden = false
+            nextEvoImage.image = UIImage(named: pokemon.nextEvolutionId)
+            evoLabel.text = "Next Evolution: \(pokemon.nextEvolutionName) - LVL \(pokemon.nextEvolutionLevel)"
+        }
     }
     /*
     // MARK: - Navigation

@@ -49,6 +49,18 @@
 	<dict>
 		<key>NSAllowsArbitraryLoads</key>
 		<true/>
+		<key>NSExceptionDomains</key>
+		<dict>
+			<key>pokeapi.co</key>
+			<dict>
+				<key>IncludesSubdomains</key>
+				<true/>
+				<key>TemporaryExceptionAllowsInsecureHTTPLoads</key>
+				<true/>
+				<key>TemporaryExceptionMinimumTLSVersion</key>
+				<string>TLSv1.1</string>
+			</dict>
+		</dict>
 	</dict>
 </dict>
 </plist>

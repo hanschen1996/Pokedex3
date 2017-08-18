@@ -159,8 +159,8 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="77.333333333333329"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ivysaur" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2aM-TU-DOp">
-                                        <rect key="frame" x="138.33333333333337" y="25.333333333333336" width="137.66666666666663" height="28.000000000000007"/>
-                                        <fontDescription key="fontDescription" name="PokemonSolidNormal" family="Pokemon Solid" pointSize="20"/>
+                                        <rect key="frame" x="138.33333333333337" y="27.000000000000004" width="137.66666666666663" height="23.333333333333339"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -215,6 +215,11 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="mI9-zr-2g7" firstAttribute="leading" secondItem="qnJ-wD-Gjt" secondAttribute="leading" id="BBE-eq-g9F"/>
+                                                    <constraint firstAttribute="bottom" secondItem="mI9-zr-2g7" secondAttribute="bottom" id="dmj-1r-AUD"/>
+                                                    <constraint firstItem="mI9-zr-2g7" firstAttribute="top" secondItem="qnJ-wD-Gjt" secondAttribute="top" id="nfh-yg-gz9"/>
+                                                </constraints>
                                             </stackView>
                                         </subviews>
                                         <constraints>
@@ -401,6 +406,14 @@
                                         <rect key="frame" x="214" y="0.0" width="184" height="174.66666666666663"/>
                                     </imageView>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="NxX-hk-UKk" secondAttribute="trailing" id="E4f-AX-gAy"/>
+                                    <constraint firstItem="u18-X8-9w2" firstAttribute="leading" secondItem="R7t-5g-JN8" secondAttribute="leading" id="JqP-ud-msp"/>
+                                    <constraint firstItem="u18-X8-9w2" firstAttribute="top" secondItem="R7t-5g-JN8" secondAttribute="top" id="Lu3-FI-JZk"/>
+                                    <constraint firstItem="NxX-hk-UKk" firstAttribute="top" secondItem="R7t-5g-JN8" secondAttribute="top" id="OY1-yg-S1Y"/>
+                                    <constraint firstAttribute="bottom" secondItem="NxX-hk-UKk" secondAttribute="bottom" id="RBH-X7-tQP"/>
+                                    <constraint firstAttribute="bottom" secondItem="u18-X8-9w2" secondAttribute="bottom" id="x1p-lh-xyj"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
